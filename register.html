@@ -4,24 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[이승은]-사용자 등록 신청서</title>
+    <style>
+        body {
+            background-color:gainsboro;
+        }
+    </style>
 </head>
 <body>
     <h1>사용자 등록 신청서</h1>
     <form>
+        <style>
+            body{
+                background-color:white
+            }
+        </style>
         <fieldset>
             <legend>기본 정보(Essential)</legend>
-            <label for="name">아이디:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <label for="name">아이디:</label><br>
+            <input type="text" id="name" name="name" required  placeholder="4-12자 영문/숫자"><br><br>
 
-        <label for="email">이메일:</label>
-        <input type="email" id="email" name="email" required placeholder="4-12자 영문/숫자"><br><br>
+            <label for="password">비밀번호:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
 
-        <label for="password">비밀번호:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-            <input type="submit" value="등록">
+            <label for="email">이메일:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
         </fieldset>
+        <p></p>
+        <p></p>
+        <fieldset>
+            <legend>부가 정보(Optional)</legend>
+            <label for="phone">연락처:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br><br>
+
+            <label for="address">관심분야:</label><br>
+            <input type="checkbox" id="HTML5" name="interests" value="HTML5">
+            <label for="HTML5">HTML5</label>
+
+            <input type="checkbox" id="CSS3" name="interests" value="CSS3">
+            <label for="CSS3">CSS3</label>
+
+            <input type="checkbox" id="JavaScript" name="interests" value="JavaScript">
+            <label for="JavaScript">JavaScript</label><br><br>
+
+            <label for="step">숙련도:</label><br>
+            <input type="range" id="step" name="step" min="1" max="10">
+
+        </fieldset>
+        <p></p>
+        <div class="container center">
+        <input type="button" value="가입신청">
+        <input type="reset" value="초기화">
+        </div>
+
     </form>
+    <p></p>
     <a href="index.html">홈으로</a>
     <p>ⓒ 2026 Web programming Course. All rights reserved.</p>
 
