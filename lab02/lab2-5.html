@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>실습 2-5</title>
+  <style>
+    table {
+      border-collapse: collapse; /* 테두리 한 줄로 합치기 */
+    }
+    table, th, td {
+      border: 1px solid darkgray;
+    }
+    caption {
+      caption-side: bottom; /* 캡션 아래쪽 */
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    th, td {
+      padding: 20px;
+      text-align: center;
+    }
+    /* 첫 번째 행(thead) 배경색 */
+    thead th {
+      background-color: #5ecfcf;
+    }
+    /* 첫 번째 열(tbody의 th) 배경색 */
+    tbody th {
+      background-color: #5ecfcf;
+    }
+    /* 특정 셀 배경 이미지 (종이책-독서자 셀) */
+    #special {
+      background-image: url('top.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>2023 국민 독서실태</caption>
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>성인</th>
+        <th>독서자</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>종이책</th>
+        <td>6.1권</td>
+        <td id="special">11.8권</td>
+      </tr>
+      <tr>
+        <th>전자책</th>
+        <td>1.2권</td>
+        <td>7.1권</td>
+      </tr>
+      <tr>
+        <th>오디오북</th>
+        <td>0.2권</td>
+        <td>5.5권</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
